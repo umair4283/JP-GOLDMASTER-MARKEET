@@ -147,31 +147,6 @@ nav{position:absolute;top:72px;left:0;right:0;background:#080808;border-bottom:1
   <div class="wrap c">
     <span class="pill">Bot Profiles</span>
     <h2>Our Trading <span class="g">Bots & Strategies</span></h2>
-    <p class="sub">Choose the right risk-reward profile and algorithm for your trading goals.</p>
-
-    <div class="grid3" style="text-align:left">
-
-      <!-- Bot 1: Conservative -->
-      <div class="card plan">
-        <span class="pill" style="font-size:10px;margin-bottom:10px">LOW RISK</span>
-        <h3>Conservative Edition</h3>
-        <p>Built for capital preservation and steady long-term growth.</p>
-        <div class="price">$199<small> / ONE-TIME</small></div>
-        <ul>
-          <li><b>Active Objective:</b> Low Exposure, Safe Strategy</li>
-          <li><b>Risk Allocation:</b> 0.5% - 1.0% per trade</li>
-          <li><b>Drawdown Protection:</b> Strict 5% Max DD</li>
-          <li>1 Real Account License + Demo</li>
-        </ul>
-        <a class="btn wa" href="#" style="width:100%;text-align:center">Buy Conservative Bot</a>
-      </div>
-
-      <!-- Bot 2: Balanced -->
-      <div class="card plan pop">
-        <span class="tag">★ BALANCED CHOICE</span>
-        <h3>Balanced Edition</h3>
-        <p>Optimal balance between steady growth and active trade frequency.</p>
-        <div class="price">$399<small> / ONE-TIME</small></div>
   <!-- Bot 1: Conservative -->
       <div class="card plan" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
@@ -192,31 +167,5 @@ nav{position:absolute;top:72px;left:0;right:0;background:#080808;border-bottom:1
         <div style="margin-top: 20px;">
           <a class="btn wa" href="#" style="width:100%;text-align:center">Buy Conservative Bot</a>
         </div>
-      </div>
-</main>
-
-<footer><div class="wrap"><b data-brand-full>CAPITAL EDGE</b></div></footer>
-
-<script>
-var CONFIG={brand:"CAPITAL",brand2:"EDGE",phone:"923377406534",msg:"Hello, I am interested in your forex trading bot. Please share details."};
-var wa="https://wa.me/"+CONFIG.phone+"?text="+encodeURIComponent(CONFIG.msg);
-document.querySelectorAll(".wa").forEach(function(a){a.href=wa;a.target="_blank";a.rel="noopener"});
-document.querySelectorAll("[data-brand]").forEach(function(e){e.textContent=CONFIG.brand});
-document.querySelectorAll("[data-brand2]").forEach(function(e){e.textContent=CONFIG.brand2});
-document.querySelectorAll("[data-brand-full]").forEach(function(e){e.textContent=CONFIG.brand+" "+CONFIG.brand2});
-var nav=document.getElementById("nav");
-document.getElementById("bg").onclick=function(){nav.classList.toggle("open")};
-nav.querySelectorAll("a").forEach(function(a){a.onclick=function(){nav.classList.remove("open")}});
-document.querySelectorAll("#st button").forEach(function(b){b.onclick=function(){
-document.querySelectorAll("#st button,.pane").forEach(function(x){x.classList.remove("on")});
-b.classList.add("on");document.getElementById(b.dataset.t).classList.add("on")}});
-var P=[["Disciplined Capital Preservation","0.5% - 1.0%","3.5%","M0 100 L400 60"],
-["Balanced Growth and Protection","1.0% - 1.5%","6%","M0 100 C100 90 200 50 400 30"],
-["Higher Exposure, Higher Risk","1.5% - 2.5%","10%","M0 100 C80 60 140 100 220 50 S330 40 400 10"]];
-document.querySelectorAll("#pf button").forEach(function(b){b.onclick=function(){
-document.querySelectorAll("#pf button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");
-var d=P[b.dataset.p];po.textContent=d[0];pr.textContent=d[1];pd.textContent=d[2];
-pl.setAttribute("d",d[3]);pa.setAttribute("d",d[3]+" L400 120 L0 120Z")}});
-</script>
-</body>
+      </div></body>
 </html>
